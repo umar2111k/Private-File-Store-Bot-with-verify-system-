@@ -74,7 +74,7 @@ async def start(bot: Client, cmd: Message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("BotsList Channel", url="https://t.me/TGRobot_List")
+                        InlineKeyboardButton("Movies Channel", url="https://t.me/filmyfunda_movies")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
