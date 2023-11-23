@@ -82,8 +82,8 @@ async def start(bot: Client, cmd: Message):
                         InlineKeyboardButton("Close 🚪", callback_data="closeMessage")
                     ],
                     [
-                        InlineKeyboardButton("Bots Channel", url="https://t.me/TeleRoidGroup"),
-                        InlineKeyboardButton(" Support Group", url="https://t.me/TeleRoid14")
+                        InlineKeyboardButton("Movies Channel", url="https://t.me/filmyfunda_movies"),
+                        InlineKeyboardButton("Owner", url="https://t.me/ded_eye")
                     ]
                 ]
             )
@@ -124,7 +124,7 @@ async def main(bot: Client, message: Message):
                 return
 
         if message.from_user.id in Config.BANNED_USERS:
-            await message.reply_text("Sorry, You are banned!\n\nContact [Support Group](https://t.me/TeleRoid14)",
+            await message.reply_text("Sorry, You are banned!\n\nContact [Support Group](https://t.me/ded_eye)",
                                      disable_web_page_preview=True)
             return
 
@@ -152,17 +152,17 @@ async def main(bot: Client, message: Message):
         try:
             forwarded_msg = await message.forward(Config.DB_CHANNEL)
             file_er_id = str(forwarded_msg.id)
-            share_link = f"https://t.me/{Config.BOT_USERNAME}?start=PredatorHackerzZ_{str_to_b64(file_er_id)}"
+            share_link = f"https://telegram.me/{Config.BOT_USERNAME}?start=filmyfunda_movies_{str_to_b64(file_er_id)}"
             CH_edit = await bot.edit_message_reply_markup(message.chat.id, message.id,
                                                           reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(
                                                               "Get Sharable Link", url=share_link)]]))
             if message.chat.username:
                 await forwarded_msg.reply_text(
-                    f"#CHANNEL_BUTTON:\n\n[{message.chat.title}](https://t.me/{message.chat.username}/{CH_edit.id}) Channel's Broadcasted File's Button Added!")
+                    f"#CHANNEL_BUTTON:\n\n[{message.chat.title}](https://telegram.me/{message.chat.username}/{CH_edit.id}) Channel's Broadcasted File's Button Added!")
             else:
                 private_ch = str(message.chat.id)[4:]
                 await forwarded_msg.reply_text(
-                    f"#CHANNEL_BUTTON:\n\n[{message.chat.title}](https://t.me/c/{private_ch}/{CH_edit.id}) Channel's Broadcasted File's Button Added!")
+                    f"#CHANNEL_BUTTON:\n\n[{message.chat.title}](https://telegram.me/c/{private_ch}/{CH_edit.id}) Channel's Broadcasted File's Button Added!")
         except FloodWait as sl:
             await asyncio.sleep(sl.value)
             await bot.send_message(
@@ -354,7 +354,7 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("BotsList Channel", url="https://t.me/PayForBotz")
+                        InlineKeyboardButton("Movvies channel", url="https://t.me/filmyfunda_movies")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -362,8 +362,8 @@ async def button(bot: Client, cmd: CallbackQuery):
                         InlineKeyboardButton("Close 🚪", callback_data="closeMessage")
                     ],
                     [
-                        InlineKeyboardButton("Support Group", url="https://t.me/TeleRoid14"),
-                        InlineKeyboardButton("Bots Channel", url="https://t.me/TeleRoidGroup")
+                        InlineKeyboardButton("Owner", url="https://t.me/ded_eye"),
+                        InlineKeyboardButton("Movies Channel", url="https://t.me/filmyfunda_movies")
                     ]
                 ]
             )
@@ -379,7 +379,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 user = await bot.get_chat_member(channel_chat_id, cmd.message.chat.id)
                 if user.status == "kicked":
                     await cmd.message.edit(
-                        text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/TeleRoid14).",
+                        text="Sorry Sir, You are Banned to use me. Contact my [Owner](https://t.me/ded_eye).",
                         disable_web_page_preview=True
                     )
                     return
@@ -401,7 +401,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 return
             except Exception:
                 await cmd.message.edit(
-                    text="Something went Wrong. Contact my [Support Group](https://t.me/TeleRoid14).",
+                    text="Something went Wrong. Contact my [Owner](https://t.me/ded_eye).",
                     disable_web_page_preview=True
                 )
                 return
@@ -411,8 +411,8 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Support Group", url="https://t.me/TeleRoid14"),
-                        InlineKeyboardButton("Bots Channel", url="https://t.me/TeleRoidGroup")
+                        InlineKeyboardButton("Owner", url="https://t.me/ded_eye"),
+                        InlineKeyboardButton("Movies Channel", url="https://t.me/filmyfunda_movies")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -441,7 +441,7 @@ async def button(bot: Client, cmd: CallbackQuery):
             MediaList[f"{str(cmd.from_user.id)}"] = []
         file_id = cmd.message.reply_to_message.id
         MediaList[f"{str(cmd.from_user.id)}"].append(file_id)
-        await cmd.message.edit("File Saved in Batch!\n\n"
+        await cmd.message.edit("File Saved in Batch ✅\n\n"
                                "Press below button to get batch link.",
                                reply_markup=InlineKeyboardMarkup([
                                    [InlineKeyboardButton("Get Batch Link", callback_data="getBatchLink")],
