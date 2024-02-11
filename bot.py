@@ -126,7 +126,7 @@ async def start(bot: Client, cmd: Message):
             verify_id = ''.join(random.choices(string.ascii_uppercase + string.digits, k=7))
             await db.create_verify_id(user_id, verify_id)
             url = await get_shortlink(f"https://telegram.me/{Config.BOT_USERNAME}?start=notcopy_{user_id}_{verify_id}")
-            buttons = [[InlineKeyboardButton(text="🔹 Click hare to Verify 🔹", url=url),], [InlineKeyboardButton(text="🌀 How to verify 🌀", url="https://t.me/c/1615289939/575")]]
+            buttons = [[InlineKeyboardButton(text="🔹 Click hare to Verify 🔹", url=url),], [InlineKeyboardButton(text="🌀 How to verify 🌀", url="https://t.me/how_to_openshortner/144")]]
             reply_markup=InlineKeyboardMarkup(buttons)
             if not await db.is_user_verified(user_id):
                 dmb = await m.reply_text(
