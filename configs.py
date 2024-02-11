@@ -18,8 +18,8 @@ class Config(object):
 	BOT_TOKEN = os.environ.get("BOT_TOKEN", "5991682088:AAFKgMtrZPYy_PeXN_F4Zs4v1n2lJd8nCgY")
 	BOT_USERNAME = os.environ.get("BOT_USERNAME", "thunder_store3_bot")
 	DB_CHANNEL = int(os.environ.get("DB_CHANNEL", "-1001896983424"))
-	SHORTLINK_URL = os.environ.get('SHORTLINK_URL', "moneykamalo.com")
-	SHORTLINK_API = os.environ.get('SHORTLINK_API', "c176f08934f241bd3980fcd7b940611ad2cbb3ce")
+	SHORTLINK_URL = os.environ.get('SHORTLINK_URL', "onepagelink.in")
+	SHORTLINK_API = os.environ.get('SHORTLINK_API', "4468800fe08226c1102ca7a0e72dc67f3fb72232")
 	BOT_OWNER = int(os.environ.get("BOT_OWNER", "399726799"))
 	DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://abcd:abcd@cluster0.zglig1z.mongodb.net/?retryWrites=true&w=majority")
 	UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "-1001577615410")
@@ -30,8 +30,8 @@ class Config(object):
 	BANNED_CHAT_IDS = list(set(int(x) for x in os.environ.get("BANNED_CHAT_IDS", "-1001362659779 -1001255795497").split()))
 	OTHER_USERS_CAN_SAVE_FILE = bool(os.environ.get("OTHER_USERS_CAN_SAVE_FILE", True)) 
 	# verification 
-	VR_SITE = os.environ.get('VR_SITE', "moneykamalo.com")
-	VR_API = os.environ.get('VR_API', "c176f08934f241bd3980fcd7b940611ad2cbb3ce")
+	VR_SITE = os.environ.get('VR_SITE', "onepagelink.in")
+	VR_API = os.environ.get('VR_API', "4468800fe08226c1102ca7a0e72dc67f3fb72232")
 	VERIFY = is_enabled((os.environ.get('VERIFY', "True")), True)	
 	VERIFY_TXT = """Hey {},\n\nʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴠᴇʀɪғɪᴇᴅ ᴛᴏᴅᴀʏ. ᴘʟᴇᴀsᴇ ᴠᴇʀɪғʏ ᴀɴᴅ ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇss ғᴏʀ ᴏɴᴇ ᴅᴀʏ\n\n<b>ಇಂದು ನೀವು verify ಮಾಡಿಲ್ಲ.. ಆದ ಕಾರಣ ಕೆಳಗಿರುವ ಲಿಂಕ್ ಅನ್ನು ಒತ್ತಿ verify ಮಾಡಿ indu ರಾತ್ರಿ 12am ತನಕ unlimited ಉಚಿತವಾಗಿ movie ಗಳನ್ನ ಪಡೆಯಿರಿ\n\n<b>इस बॉट को इस्तेमाल करने के लिए आपको रोजाना 1 बार verify करना होगा नहीं तो आप इसका इस्तेमाल नहीं कर पाएंगे"""
 	VERIFY_COMPLETE_TEXT = """Hey. {}.\n\nʏᴏᴜ ᴀʀᴇ ɴᴏᴡ ᴠᴇʀɪғɪᴇᴅ ғᴏʀ ᴛᴏɴɪɢʜᴛ 12:00ᴀᴍ ... ᴇɴɪᴏʏ ʏᴏᴜʀ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇꜱꜱ ғᴏʀ ʏᴏᴜʀ ᴇɴᴛᴇʀᴛᴀɪɴᴍᴇɴᴛ🧑‍🎤 ...\n\n#Completed"""	
