@@ -4,6 +4,8 @@ import asyncio
 import requests
 import string
 import random
+from shortzy import Shortzy 
+import shortzy 
 from configs import Config
 from pyrogram import Client
 from pyrogram.types import (
@@ -13,12 +15,14 @@ from pyrogram.types import (
 )
 from pyrogram.errors import FloodWait
 from handlers.helpers import str_to_b64
+URL_LONG = False 
 
 def generate_random_alphanumeric():
     """Generate a random 8-letter alphanumeric string."""
     characters = string.ascii_letters + string.digits
     random_chars = ''.join(random.choice(characters) for _ in range(8))
     return random_chars
+
 
 def get_short(url):
     rget = requests.get(f"https://{Config.SHORTLINK_URL}/api?api={Config.SHORTLINK_API}&url={url}&alias={generate_random_alphanumeric()}")
@@ -28,7 +32,14 @@ def get_short(url):
     else:
         return url
 
-    
+shortz = shortzy.Shortzy(Config.VR_API, Config.VR_SITE)
+async def get_shortlink(link):
+    if  URL_LONG =="True" or URL_LONG is True:
+        return await shortz.get_quick_link(link)
+    else:
+        return await shortz.convert(link, silently_fail=False)
+    return link
+
 async def forward_to_channel(bot: Client, message: Message, editable: Message):
     try:
         __SENT = await message.forward(Config.DB_CHANNEL)
