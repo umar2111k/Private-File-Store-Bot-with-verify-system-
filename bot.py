@@ -3,9 +3,15 @@
 import os
 import asyncio
 import traceback
+import random
 from binascii import (
     Error
 )
+import os, datetime, time
+from datetime import datetime
+import string
+import pytz
+
 from pyrogram import (
     Client,
     enums,
@@ -22,6 +28,7 @@ from pyrogram.types import (
     CallbackQuery,
     Message
 )
+from handlers.save_media import get_shortlink
 from configs import Config
 from handlers.database import db
 from handlers.add_user_to_db import add_user_to_database
@@ -39,6 +46,8 @@ from handlers.save_media import (
 )
 
 MediaList = {}
+
+
 
 Bot = Client(
     name=Config.BOT_USERNAME,
@@ -64,7 +73,29 @@ async def start(bot: Client, cmd: Message):
         back = await handle_force_sub(bot, cmd)
         if back == 400:
             return
-    
+            
+    m = cmd
+    user_id = m.from_user.id
+
+    if len(m.command) == 2 and m.command[1].startswith('notcopy'):
+        user_id = int(m.command[1].split("_")[1])
+        verify_id = m.command[1].split("_")[2]
+        
+        ist_timezone = pytz.timezone('Asia/Kolkata')
+        verify_id_info = await db.get_verify_id_info(user_id, verify_id)
+        if not verify_id_info or verify_id_info["verified"]:
+            await m.reply("Invalid link. Link has already verified or has wrong hash. Try Again")
+            return
+        
+        await db.update_notcopy_user(user_id, {"last_verified":datetime.now(tz=ist_timezone)})
+        await db.update_verify_id_info(user_id, verify_id, {"verified":True})
+        url = Config.ID.get(m.from_user.id)
+        dmm = await m.reply_text(
+        #photo=(MALIK5), 
+        text=(Config.VERIFY_COMPLETE_TEXT.format(m.from_user.mention)), 
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Click here to get file",url=url),]]),parse_mode=enums.ParseMode.HTML)#"You are now verified for next 24 hours. Continue asking movies")
+        return
+        
     usr_cmd = cmd.text.split("_", 1)[-1]
     if usr_cmd == "/start":
         await add_user_to_database(bot, cmd)
@@ -89,6 +120,24 @@ async def start(bot: Client, cmd: Message):
             )
         )
     else:
+        if Config.VERIFY:
+            Config.ID[m.from_user.id] = f"https://t.me/{Config.BOT_USERNAME}?start={m.command[1]}"
+            await add_user_to_database(bot, cmd)
+            verify_id = ''.join(random.choices(string.ascii_uppercase + string.digits, k=7))
+            await db.create_verify_id(user_id, verify_id)
+            url = await get_shortlink(f"https://telegram.me/{Config.BOT_USERNAME}?start=notcopy_{user_id}_{verify_id}")
+            buttons = [[InlineKeyboardButton(text="🔹 Click hare to Verify 🔹", url=url),], [InlineKeyboardButton(text="🌀 How to verify 🌀", url="https://t.me/c/1615289939/575")]]
+            reply_markup=InlineKeyboardMarkup(buttons)
+            if not await db.is_user_verified(user_id):
+                dmb = await m.reply_text(
+                    text=(Config.VERIFY_TXT.format(m.from_user.mention)),
+                    protect_content = False,
+                    reply_markup=reply_markup,
+                    parse_mode=enums.ParseMode.HTML
+                )
+                await asyncio.sleep(120) 
+                await dmb.delete()	
+                return        
         try:
             try:
                 file_id = int(b64_to_str(usr_cmd).split("_")[-1])
