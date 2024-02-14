@@ -113,7 +113,6 @@ async def start(bot: Client, cmd: Message):
                         InlineKeyboardButton("Close 🚪", callback_data="closeMessage")
                     ],
                     [
-                        InlineKeyboardButton("Movies Channel", url="https://t.me/filmyfunda_movies"),
                         InlineKeyboardButton("Owner", url="https://t.me/ded_eye")
                     ]
                 ]
@@ -368,7 +367,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 [
                     [
                         InlineKeyboardButton("Source Codes of Bot",
-                                             url="https://github.com/PredatorHackerzZ/TG-FileStore")
+                                             url="https://github.com/bhatmanjusms")
                     ],
                     [
                         InlineKeyboardButton("Go Home", callback_data="gotohome"),
@@ -386,7 +385,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 [
                     [
                         InlineKeyboardButton("Source Codes of Bot",
-                                             url="https://github.com/PredatorHackerzZ/TG-FileStore")
+                                             url="https://github.com/bhatmanjusms")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -403,7 +402,7 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Movvies channel", url="https://t.me/filmyfunda_movies")
+                        InlineKeyboardButton("Movies channel", url="https://t.me/filmyfunda_movies")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -411,8 +410,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                         InlineKeyboardButton("Close 🚪", callback_data="closeMessage")
                     ],
                     [
-                        InlineKeyboardButton("Owner", url="https://t.me/ded_eye"),
-                        InlineKeyboardButton("Movies Channel", url="https://t.me/filmyfunda_movies")
+                        InlineKeyboardButton("Owner", url="https://t.me/ded_eye")
                     ]
                 ]
             )
