@@ -15,7 +15,7 @@ class Config(object):
 	ID = {}
 	API_ID = int(os.environ.get("API_ID", "977080"))
 	API_HASH = os.environ.get("API_HASH", "0c20c4265501492a1513f91755acd42b")
-	BOT_TOKEN = os.environ.get("BOT_TOKEN", "5991682088:AAFKgMtrZPYy_PeXN_F4Zs4v1n2lJd8nCgY")
+	BOT_TOKEN = os.environ.get("BOT_TOKEN", "5991682088:AAFArp6xqU0vY52Lgo4YTy7Y65Dwvli3ACY")
 	BOT_USERNAME = os.environ.get("BOT_USERNAME", "thunder_store3_bot")
 	DB_CHANNEL = int(os.environ.get("DB_CHANNEL", "-1001896983424"))
 	SHORTLINK_URL = os.environ.get('SHORTLINK_URL', "onepagelink.in")
