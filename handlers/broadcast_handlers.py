@@ -1,4 +1,4 @@
-# (c) @PredatorHackerzZ
+# (c) @Illegal_Developer
 
 import time
 import string
