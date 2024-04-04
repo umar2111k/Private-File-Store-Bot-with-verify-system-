@@ -48,9 +48,9 @@ This is a Permanent FileStore Bot By Illegal Developer
 │
 ├🔹 **Hosted On:** [Heroku](https://heroku.com)
 │
-├🔸 **Developer:** [Ded eye](https://t.me/illegaldeveloperbot) 
+├🔸 **Developer:** [ILLEGAL DEVELOPER](https://t.me/illegaldeveloperbot) 
 │
-├🔸 **Update Channel:** [Movies Channel](https://t.me/illegal_developer)
+├🔸 **Update Channel:** [Update Channel](https://t.me/illegal_developer)
 │
 ╰──────[ 😎 ]───────────⍟
 """
