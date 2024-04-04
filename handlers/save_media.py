@@ -128,8 +128,7 @@ async def save_media_in_channel(bot: Client, editable: Message, message: Message
                [[InlineKeyboardButton("Original Link", url=share_link),
                   InlineKeyboardButton("Short Link", url=short_link)],
                  [InlineKeyboardButton("Movies Channel", url="https://t.me/kseriesfilm"),
-                  InlineKeyboardButton("Admin", url="https://t.me/illegaldeveloperbot
-            ),
+                  InlineKeyboardButton("Admin", url="https://t.me/illegaldeveloperbot"),
             disable_web_page_preview=True
         )
     except FloodWait as sl:
