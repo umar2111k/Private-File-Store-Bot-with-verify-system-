@@ -13,8 +13,8 @@
 - You Can Set Shortner or Verification For 12 Hours
 - Your User Will Be Get Enjoy With Fast Download And Stream Feature
 
-<center>### Demo Bot:
-<a href="https://t.me/TG_File_Store_iBot"><img src="https://img.shields.io/badge/Demo-Telegram%20Bot-blue.svg?logo=telegram"></a></center>
+### Demo Bot:
+<a href="https://t.me/TG_File_Store_iBot"><img src="https://img.shields.io/badge/Demo-Telegram%20Bot-blue.svg?logo=telegram"></a>
 
 ![Configs](https://telegra.ph/file/033408792afc4d4f1f8f6.png) 🤖
 
