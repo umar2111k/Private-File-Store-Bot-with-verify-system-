@@ -1,4 +1,4 @@
-# (c) @AbirHasan2005 | @PredatorHackerzZ
+# (c) @Illegal_Developer | @Kunal SIngh
 
 import asyncio
 import requests
@@ -85,8 +85,8 @@ async def save_batch_media_in_channel(bot: Client, editable: Message, message_id
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton("Original Link", url=share_link),
                   InlineKeyboardButton("Short Link", url=short_link)],
-                 [InlineKeyboardButton("Movies Channel", url="https://t.me/filmyfunda_movies"),
-                  InlineKeyboardButton("Admin", url="https://t.me/ded_eye")]]
+                 [InlineKeyboardButton("Update Channel", url="https://t.me/Illegal_developer"),
+                  InlineKeyboardButton("Admin", url="https://t.me/Illegaldeveloperbot")]]
             ),
             disable_web_page_preview=True
         )
@@ -127,8 +127,8 @@ async def save_media_in_channel(bot: Client, editable: Message, message: Message
             reply_markup=InlineKeyboardMarkup(
                [[InlineKeyboardButton("Original Link", url=share_link),
                   InlineKeyboardButton("Short Link", url=short_link)],
-                 [InlineKeyboardButton("Movies Channel", url="https://t.me/filmyfunda_movies"),
-                  InlineKeyboardButton("Admin", url="https://t.me/ded_eye")]]
+                 [InlineKeyboardButton("Movies Channel", url="https://t.me/illegal_developer"),
+                  InlineKeyboardButton("Admin", url="https://t.me/Illegaldeveloperbot")]]
             ),
             disable_web_page_preview=True
         )
