@@ -1,4 +1,4 @@
-# (c) Mr. Vishal & @AbirHasan2005 @PredatorHackerzZ
+# (c) Kunal & Rishikesh  @Illegal_Developer @Rkbotz
 
 import datetime
 from configs import Config
