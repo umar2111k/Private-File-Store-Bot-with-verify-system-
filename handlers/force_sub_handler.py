@@ -1,4 +1,4 @@
-# (c) @PredatorHackerzZ
+# (c) @Illegal_Developer
 
 import asyncio
 from typing import (
