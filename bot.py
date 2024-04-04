@@ -125,7 +125,7 @@ async def start(bot: Client, cmd: Message):
             verify_id = ''.join(random.choices(string.ascii_uppercase + string.digits, k=7))
             await db.create_verify_id(user_id, verify_id)
             url = await get_shortlink(f"https://telegram.me/{Config.BOT_USERNAME}?start=notcopy_{user_id}_{verify_id}")
-            buttons = [[InlineKeyboardButton(text="🔹 Click hare to Verify 🔹", url=url),], [InlineKeyboardButton(text="🌀 How to verify 🌀", url="https://t.me/how_to_openshortner/144")]]
+            buttons = [[InlineKeyboardButton(text="🔹 Click hare to Verify 🔹", url=url),], [InlineKeyboardButton(text="🌀 How to verify 🌀", url="https://t.me/illegaldeveloper")]]
             reply_markup=InlineKeyboardMarkup(buttons)
             if not await db.is_user_verified(user_id):
                 dmb = await m.reply_text(
@@ -172,7 +172,7 @@ async def main(bot: Client, message: Message):
                 return
 
         if message.from_user.id in Config.BANNED_USERS:
-            await message.reply_text("Sorry, You are banned!\n\nContact [Support Group](https://t.me/ded_eye)",
+            await message.reply_text("Sorry, You are banned!\n\nContact [Support Group](https://t.me/illegaldeveloperbot)",
                                      disable_web_page_preview=True)
             return
 
@@ -200,7 +200,7 @@ async def main(bot: Client, message: Message):
         try:
             forwarded_msg = await message.forward(Config.DB_CHANNEL)
             file_er_id = str(forwarded_msg.id)
-            share_link = f"https://filmyfundamoviies.blogspot.com/p/file.html?link={str_to_b64(file_er_id)}"
+            share_link = f"https://telegram.me/{Config.BOT_USERNAME}?start=illegal_developer_{str_to_b64(file_er_id)}"
             CH_edit = await bot.edit_message_reply_markup(message.chat.id, message.id,
                                                           reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(
                                                               "Get Sharable Link", url=share_link)]]))
@@ -367,7 +367,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 [
                     [
                         InlineKeyboardButton("Source Codes of Bot",
-                                             url="https://github.com/bhatmanjusms")
+                                             url="https://github.com/illegaldeveloper")
                     ],
                     [
                         InlineKeyboardButton("Go Home", callback_data="gotohome"),
@@ -385,7 +385,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 [
                     [
                         InlineKeyboardButton("Source Codes of Bot",
-                                             url="https://github.com/bhatmanjusms")
+                                             url="https://github.com/illegaldeveloper")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -402,7 +402,7 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Movies channel", url="https://t.me/filmyfunda_movies")
+                        InlineKeyboardButton("Update channel", url="https://t.me/illegal_developer")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -410,7 +410,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                         InlineKeyboardButton("Close 🚪", callback_data="closeMessage")
                     ],
                     [
-                        InlineKeyboardButton("Owner", url="https://t.me/ded_eye")
+                        InlineKeyboardButton("Owner", url="https://t.me/illegaldeveloperbot")
                     ]
                 ]
             )
@@ -426,7 +426,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 user = await bot.get_chat_member(channel_chat_id, cmd.message.chat.id)
                 if user.status == "kicked":
                     await cmd.message.edit(
-                        text="Sorry Sir, You are Banned to use me. Contact my [Owner](https://t.me/ded_eye).",
+                        text="Sorry Sir, You are Banned to use me. Contact my [Owner](https://t.me/illegaldeveloperbot).",
                         disable_web_page_preview=True
                     )
                     return
@@ -448,7 +448,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 return
             except Exception:
                 await cmd.message.edit(
-                    text="Something went Wrong. Contact my [Owner](https://t.me/ded_eye).",
+                    text="Something went Wrong. Contact my [Owner](https://t.me/illegaldeveloperbot).",
                     disable_web_page_preview=True
                 )
                 return
@@ -458,8 +458,8 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Owner", url="https://t.me/ded_eye"),
-                        InlineKeyboardButton("Movies Channel", url="https://t.me/filmyfunda_movies")
+                        InlineKeyboardButton("Owner", url="https://t.me/illegaldeveloperbot"),
+                        InlineKeyboardButton("Update Channel", url="https://t.me/illegal_developer")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
