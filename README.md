@@ -1,18 +1,20 @@
 ![TGFileStore](https://telegra.ph/file/d651c7b7943a9702f846d.png)
 
-⍟ 𝗧𝗵𝗶𝘀 𝗶𝘀 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺 𝗣𝗮𝗿𝗺𝗮𝗻𝗲𝗻𝘁 𝗙𝗶𝗹𝗲𝘀 𝗦𝘁𝗼𝗿𝗲 𝗕𝗼𝘁 𝗯𝘆 [@𝐓𝐡𝐞𝐓𝐞𝐥𝐞𝐑𝐨𝐢𝐝](https://telegram.dog/TheTeleRoid).
+⍟ 𝗧𝗵𝗶𝘀 𝗶𝘀 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺 𝗣𝗮𝗿𝗺𝗮𝗻𝗲𝗻𝘁 𝗙𝗶𝗹𝗲𝘀 𝗦𝘁𝗼𝗿𝗲 𝗕𝗼𝘁 𝗯𝘆 [𝙄𝙡𝙡𝙚𝙜𝙖𝙡 𝘿𝙚𝙫𝙚𝙡𝙤𝙥𝙚𝙧](https://t.me/illegal_developer).
 
 * **Language:** [Python3](https://www.python.org)
 * **Library:** [Pyrogram](https://docs.pyrogram.org)
 
 ### Features:
-- In PM Just Forward or Send any file it will save on Database & give you the Access Link.
-- In Channel Add Bot as Admin with Edit Rights. When you will send any file or media in Channel it will Edit the Broadcast Message with Saved Link Button.
-- You can also Broadcast anythings via this Bot.
-- You can also Do Force Sub to a Channel to allow access the Bot.
+- In PM Just Forward or Send Any File It Will Save on Database & Give You The Access Link.
+- In Channel Add Bot as Admin With Edit Rights. When You Will Send Any File or Media in Channel It Will Edit The Broadcast Message With Saved Link Button.
+- You Can Also Broadcast Anythings Via This Bot.
+- You Can Also Do Force Sub to a Channel To Allow Access The Bot.
+- You Can Set Shortner or Verification For 12 Hours
+- Your User Will Be Get Enjoy With Fast Download And Stream Feature
 
 ### Demo Bot:
-<a href="https://t.me/TeleRoid_FileStore_Bot"><img src="https://img.shields.io/badge/Demo-Telegram%20Bot-blue.svg?logo=telegram"></a>
+<a href="https://t.me/TG_File_Store_iBot"><img src="https://img.shields.io/badge/Demo-Telegram%20Bot-blue.svg?logo=telegram"></a>
 
 ![Configs](https://telegra.ph/file/033408792afc4d4f1f8f6.png) 🤖
 
@@ -46,12 +48,19 @@ banned_users - Get All Banned Users [Owner Only]
 ```
 
 ### 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐆𝐫𝐨𝐮𝐩:
-<a href="https://t.me/TeleRoid14"><img src="https://img.shields.io/badge/Telegram-Join%20Telegram%20Group-green.svg?logo=telegram"></a>
+<a href="https://t.me/illegal_supports"><img src="https://img.shields.io/badge/Telegram-Join%20Telegram%20Group-green.svg?logo=telegram"></a>
 ### 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥:
-<a href="https://t.me/TeleRoidGroup"><img src="https://img.shields.io/badge/Telegram-Join%20Telegram%20Channel-yellow.svg?logo=telegram"></a>
+<a href="https://t.me/illegal_developer"><img src="https://img.shields.io/badge/Telegram-Join%20Telegram%20Channel-yellow.svg?logo=telegram"></a>
 
 
-👲 <b>DEV</b>
+## 👲 DEV
+
+<a href="https://t.me/IllegalDeveloperBot">
+   <p> Illegal Developer</p>
+  </a>
+<a href="https://youtube.com/c/">
+   <p> Illegal Developer YT</p>
+  </a>
 
 <p align="middle">
 <img src="https://wallpapercave.com/wp/wp8674389.jpg" width="150" height="150"><br>
