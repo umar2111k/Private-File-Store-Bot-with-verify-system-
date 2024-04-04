@@ -1,5 +1,5 @@
 
-# (c) @TeleRoidGroup || @PredatorHackerzZ
+# (c) @Illegal_Developer || 
 
 import os
 import asyncio
@@ -106,7 +106,7 @@ async def start(bot: Client, cmd: Message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Movies Channel", url="https://t.me/filmyfunda_movies")
+                        InlineKeyboardButton("Update Channel", url="https://t.me/illegal_developer")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -114,7 +114,7 @@ async def start(bot: Client, cmd: Message):
                         InlineKeyboardButton("Close 🚪", callback_data="closeMessage")
                     ],
                     [
-                        InlineKeyboardButton("Owner", url="https://t.me/ded_eye")
+                        InlineKeyboardButton("Owner", url="https://t.me/illegaldeveloperbot")
                     ]
                 ]
             )
@@ -126,7 +126,7 @@ async def start(bot: Client, cmd: Message):
             verify_id = ''.join(random.choices(string.ascii_uppercase + string.digits, k=7))
             await db.create_verify_id(user_id, verify_id)
             url = await get_shortlink(f"https://telegram.me/{Config.BOT_USERNAME}?start=notcopy_{user_id}_{verify_id}")
-            buttons = [[InlineKeyboardButton(text="🔹 Click hare to Verify 🔹", url=url),], [InlineKeyboardButton(text="🌀 How to verify 🌀", url="https://t.me/illegaldeveloper")]]
+            buttons = [[InlineKeyboardButton(text="🔹 Click hare to Verify 🔹", url=url),], [InlineKeyboardButton(text="🌀 How to verify 🌀", url="https://t.me/illegal_developer")]]
             reply_markup=InlineKeyboardMarkup(buttons)
             if not await db.is_user_verified(user_id):
                 dmb = await m.reply_text(
