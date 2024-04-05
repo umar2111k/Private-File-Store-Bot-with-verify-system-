@@ -85,7 +85,7 @@ async def save_batch_media_in_channel(bot: Client, editable: Message, message_id
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton("Original Link", url=share_link),
                   InlineKeyboardButton("Short Link", url=short_link)],
-                 [InlineKeyboardButton("Update Channel", url="https://t.me/Illegal_developer"),
+                 [InlineKeyboardButton("Update Channel", url="https://t.me/mashmedia02"),
                   InlineKeyboardButton("Admin", url="https://t.me/Illegaldeveloperbot")]]
             ),
             disable_web_page_preview=True
@@ -127,7 +127,7 @@ async def save_media_in_channel(bot: Client, editable: Message, message: Message
             reply_markup=InlineKeyboardMarkup(
                [[InlineKeyboardButton("Original Link", url=share_link),
                   InlineKeyboardButton("Short Link", url=short_link)],
-                 [InlineKeyboardButton("Movies Channel", url="https://t.me/illegal_developer"),
+                 [InlineKeyboardButton("Movies Channel", url="https://t.me/mashmedia02"),
                   InlineKeyboardButton("Admin", url="https://t.me/Illegaldeveloperbot")]]
             ),
             disable_web_page_preview=True
