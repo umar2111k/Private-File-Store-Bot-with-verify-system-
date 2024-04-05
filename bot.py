@@ -106,7 +106,7 @@ async def start(bot: Client, cmd: Message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Update Channel", url="https://t.me/illegal_developer")
+                        InlineKeyboardButton("Update Channel", url="https://t.me/asianetserial_zeekeralam")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -403,7 +403,7 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Update channel", url="https://t.me/illegal_developer")
+                        InlineKeyboardButton("Update channel", url="https://t.me/asianetserial_zeekeralam")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
