@@ -404,16 +404,33 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("UPI Id 🏦", callback_data="aboutbot"),
+                        InlineKeyboardButton("UPI Id 🏦", callback_data="upi"),
                         InlineKeyboardButton("PayPal 🌍", callback_data="aboutdevs"),
                         InlineKeyboardButton("Ko-Fi ☕", callback_data="closeMessage")
                     ],
                     [
-                        InlineKeyboardButton("🧑‍💻 Admin", callback_data="https://t.me/illegaldeveloperbot")
+                        InlineKeyboardButton("🧑‍💻 Admin", url="https://t.me/illegaldeveloperbot")
                     ],
                     [
                         InlineKeyboardButton(" 🔐 Close", callback_data="closeMessage"),
-                        InlineKeyboardButton("Home 🏡", callback_data="start")
+                        InlineKeyboardButton("Home 🏡", callback_data="gotohome")
+                    ]
+                ]
+            )
+        )
+    
+    elif "upi" in cb_data:
+        await cmd.message.edit(
+            Config.UPI_TEXT,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("Send Screenshot 🧾", url="https://t.me/illegaldeveloperbot")
+                    ],
+                    [
+                        InlineKeyboardButton("Back", callback_data="start"),
+                        InlineKeyboardButton("Next", callback_data="start")
                     ]
                 ]
             )
