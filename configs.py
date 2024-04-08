@@ -65,6 +65,14 @@ This is a Permanent FileStore Bot By Illegal Developer
  
  After Doing Payment Send Screenshots Of Payment To Admin"""
 	
+	UPI_TEXT = """<b>👋 ʜᴇʏ [{}](tg://user?id={}),
+    
+⚜️ ᴘᴀʏ ᴀᴍᴍᴏᴜɴᴛ ᴀᴄᴄᴏʀᴅɪɴɢ ᴛᴏ ʏᴏᴜʀ ᴘʟᴀɴ ᴀɴᴅ ᴇɴᴊᴏʏ ᴘʀᴇᴍɪᴜᴍ ᴍᴇᴍʙᴇʀꜱʜɪᴘ !
+
+💵 ᴜᴘɪ ɪᴅ - <code>illegal.developer@axl</code>
+
+‼️ ᴍᴜsᴛ sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ ᴀғᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ.</b>"""
+	
 	HOME_TEXT = """
 Hello, [{}](tg://user?id={})\n\nThis is a Permanent **FileStore Bot**.
 
