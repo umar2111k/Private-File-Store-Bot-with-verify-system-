@@ -409,6 +409,9 @@ async def button(bot: Client, cmd: CallbackQuery):
                         InlineKeyboardButton("Ko-Fi ☕", callback_data="closeMessage")
                     ],
                     [
+                        InlineKeyboardButton("🧑‍💻 Admin", callback_data="https://t.me/illegaldeveloperbot")
+                    ],
+                    [
                         InlineKeyboardButton(" 🔐 Close", callback_data="closeMessage"),
                         InlineKeyboardButton("Home 🏡", callback_data="start")
                     ]
