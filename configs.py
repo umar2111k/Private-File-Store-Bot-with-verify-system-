@@ -65,7 +65,7 @@ This is a Permanent FileStore Bot By Illegal Developer
  
  After Doing Payment Send Screenshots Of Payment To Admin"""
 	
-	UPI_TEXT = """<b>👋 ʜᴇʏ [{}](tg://user?id={}),
+	UPI_TEXT = """<b>👋 ʜᴇʏ [{}](tg://user?id={})
     
 ⚜️ ᴘᴀʏ ᴀᴍᴍᴏᴜɴᴛ ᴀᴄᴄᴏʀᴅɪɴɢ ᴛᴏ ʏᴏᴜʀ ᴘʟᴀɴ ᴀɴᴅ ᴇɴᴊᴏʏ ᴘʀᴇᴍɪᴜᴍ ᴍᴇᴍʙᴇʀꜱʜɪᴘ !
 
@@ -73,13 +73,17 @@ This is a Permanent FileStore Bot By Illegal Developer
 
 ‼️ ᴍᴜsᴛ sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ ᴀғᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ.</b>"""
 	
-	PAYPAL_TEXT = """<b>If You Are From a Country Outside India Then Pay Using PayPal
+	PAYPAL_TEXT = """<b>👋 Hey Sweetheart,
  
- 🏦 PayPal Id - <spoiler>illegaldeveloper76@gmail.com</spoiler></b>"""
+ ⚜️ Pay Amount According To Your Plan And Enjoy Premium Membership 🤠
+ 
+ 🏦 PayPal Id - <spoiler>illegaldeveloper76@gmail.com</spoiler>
+ 
+ 📌 Note :- <i>If You Are From a Country Outside India Then Pay Using PayPal</i></b>"""
 	
-	KO_TEXT = """<b><u>Donate Something</u>
+	KO_TEXT = """<b><u>Hello, [{}](tg://user?id={})\n\nBuy Me A Cup of Coffee</u> ☕
  
- ☕ Buy Me A Cup of Coffee</b>"""
+ Click Below Button To Buy Coffee And Get Some Peace</b>"""
 	
 	HOME_TEXT = """
 Hello, [{}](tg://user?id={})\n\nThis is a Permanent **FileStore Bot**.
