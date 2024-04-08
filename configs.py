@@ -57,6 +57,14 @@ This is a Permanent FileStore Bot By Illegal Developer
 	ABOUT_DEV_TEXT = f"""
  I am Super noob Please Support My Hard Work.
 """
+	ABOUT_DEV_TEXT = """<b>Are You A Free User? Then Upgrade Your Plan.</b>
+ 
+ Or Buy Premium Just  ₹30 or $ 0.55 And Use the Available Shortner Sites or Can Request Sites.
+ 
+ You can Pay Using Upi Id 
+ 
+ After Doing Payment Send Screenshots Of Payment To Admin"""
+	
 	HOME_TEXT = """
 Hello, [{}](tg://user?id={})\n\nThis is a Permanent **FileStore Bot**.
 
