@@ -114,8 +114,8 @@ async def start(bot: Client, cmd: Message):
                         InlineKeyboardButton("Close 🚪", callback_data="closeMessage")
                     ],
                     [
-                        InlineKeyboardButton("Support Group", url="https://t.me/illegaldeveloperbot"),
-                        InlineKeyboardButton("Bot Channel", url="https://t.me/illegaldeveloperbot"),
+                        InlineKeyboardButton("Support Group", url="https://t.me/Illegal_Supports"),
+                        InlineKeyboardButton("Bot Channel", url="https://t.me/Illegal_Developer")
                     ]
                 ]
             )
@@ -429,7 +429,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                         InlineKeyboardButton("Send Screenshot 🧾", url="https://t.me/illegaldeveloperbot")
                     ],
                     [
-                        InlineKeyboardButton("« Back", callback_data="start"),
+                        InlineKeyboardButton("« Back", callback_data="upgrade"),
                         InlineKeyboardButton("Next »", callback_data="paypal")
                     ]
                 ]
@@ -460,7 +460,7 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Send Screenshot 🧾", url="https://t.me/illegaldeveloperbot")
+                        InlineKeyboardButton("Buy A Cup of Coffee ☕", url="https://ko-fi.com/illegaldeveloper")
                     ],
                     [
                         InlineKeyboardButton("« Back", callback_data="paypal"),
@@ -485,8 +485,8 @@ async def button(bot: Client, cmd: CallbackQuery):
                         InlineKeyboardButton("Close 🚪", callback_data="closeMessage")
                     ],
                     [
-                        InlineKeyboardButton("Support Group", url="https://t.me/illegaldeveloperbot"),
-                        InlineKeyboardButton("Bot Channel", url="https://t.me/illegaldeveloperbot")
+                        InlineKeyboardButton("Support Group", url="https://t.me/Illegal_Supports"),
+                        InlineKeyboardButton("Bot Channel", url="https://t.me/Illegal_Developer")
                     ]
                 ]
             )
