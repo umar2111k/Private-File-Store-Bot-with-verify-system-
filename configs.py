@@ -57,6 +57,22 @@ This is a Permanent FileStore Bot By Illegal Developer
 	ABOUT_DEV_TEXT = f"""
  I am Super noob Please Support My Hard Work.
 """
+	UPGRADE_TEXT = """<b>Are You A Free User? Then Upgrade Your Plan.</b>
+ 
+ Or Buy Premium Just  ₹30 or $ 0.55 And Use the Available Shortner Sites or Can Request Sites.
+ 
+ You can Pay Using Upi Id 
+ 
+ After Doing Payment Send Screenshots Of Payment To Admin"""
+	
 	HOME_TEXT = """
-Hello, [{}](tg://user?id={})\n\nThis is a Permanent **FileStore Bot**..
+Hello, [{}](tg://user?id={})\n\nThis is a Permanent **FileStore Bot**.
+
+<b><u>How to Use Bot & it's Benefits??</b></u>
+
+📢 Send me any File & It will be uploaded in My Database & You will Get the File Link.
+
+⚠️ Benefits: If you have a TeleGram Movie Channel or Any Copyright Channel, Then Its Useful for Daily Usage, You can Send Me Your File & I will Send Permanent Link to You & Channel will be Safe from **CopyRight Infringement** Issue. I support Channel Also You Can Check **About Bot**.
+
+❌ <b>PORNOGRAPHY CONTENTS</b> are strictly prohibited & get Permanent Ban..
 """
