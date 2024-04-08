@@ -36,9 +36,9 @@ class Config(object):
 	VERIFY_TXT = """Hey {},\n\nʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴠᴇʀɪғɪᴇᴅ ᴛᴏᴅᴀʏ. ᴘʟᴇᴀsᴇ ᴠᴇʀɪғʏ ᴀɴᴅ ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇss ғᴏʀ ᴏɴᴇ ᴅᴀʏ\n\n<b>ಇಂದು ನೀವು verify ಮಾಡಿಲ್ಲ.. ಆದ ಕಾರಣ ಕೆಳಗಿರುವ ಲಿಂಕ್ ಅನ್ನು ಒತ್ತಿ verify ಮಾಡಿ indu ರಾತ್ರಿ 12am ತನಕ unlimited ಉಚಿತವಾಗಿ movie ಗಳನ್ನ ಪಡೆಯಿರಿ\n\n<b>इस बॉट को इस्तेमाल करने के लिए आपको रोजाना 1 बार verify करना होगा नहीं तो आप इसका इस्तेमाल नहीं कर पाएंगे"""
 	VERIFY_COMPLETE_TEXT = """Hey. {}.\n\nʏᴏᴜ ᴀʀᴇ ɴᴏᴡ ᴠᴇʀɪғɪᴇᴅ ғᴏʀ ᴛᴏɴɪɢʜᴛ 12:00ᴀᴍ ... ᴇɴɪᴏʏ ʏᴏᴜʀ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇꜱꜱ ғᴏʀ ʏᴏᴜʀ ᴇɴᴛᴇʀᴛᴀɪɴᴍᴇɴᴛ🧑‍🎤 ...\n\n#Completed"""	
 	ABOUT_BOT_TEXT = f"""
-This is a Permanent FileStore Bot By Illegal Developer
+<b>This is a Permanent FileStore Bot By Illegal Developer.</b>
 
-╭────[ **🔅FɪʟᴇSᴛᴏʀᴇBᴏᴛ🔅**]────⍟
+╭────[ **🔅Fɪʟᴇ Sᴛᴏʀᴇ Bᴏᴛ🔅**]────⍟
 │
 ├🔸 **My Name:** [FileStore Bot](https://t.me/{BOT_USERNAME})
 │
@@ -55,7 +55,7 @@ This is a Permanent FileStore Bot By Illegal Developer
 ╰──────[ 😎 ]───────────⍟
 """
 	ABOUT_DEV_TEXT = f"""
- I am Super noob Please Support My Hard Work.
+ <b>I Am Super Noob Please Support My Hard Work.</b>
 """
 	UPGRADE_TEXT = """<b>Are You A Free User? Then Upgrade Your Plan.</b>
  
@@ -64,6 +64,26 @@ This is a Permanent FileStore Bot By Illegal Developer
  You can Pay Using Upi Id 
  
  After Doing Payment Send Screenshots Of Payment To Admin"""
+	
+	UPI_TEXT = """<b>👋 ʜᴇʏ [{}](tg://user?id={})
+    
+⚜️ ᴘᴀʏ ᴀᴍᴍᴏᴜɴᴛ ᴀᴄᴄᴏʀᴅɪɴɢ ᴛᴏ ʏᴏᴜʀ ᴘʟᴀɴ ᴀɴᴅ ᴇɴᴊᴏʏ ᴘʀᴇᴍɪᴜᴍ ᴍᴇᴍʙᴇʀꜱʜɪᴘ !
+
+💵 ᴜᴘɪ ɪᴅ - <code>illegal.developer@axl</code>
+
+‼️ ᴍᴜsᴛ sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ ᴀғᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ.</b>"""
+	
+	PAYPAL_TEXT = """<b>👋 Hey Sweetheart,
+ 
+ ⚜️ Pay Amount According To Your Plan And Enjoy Premium Membership 🤠
+ 
+ 🏦 PayPal Id - <spoiler>illegaldeveloper76@gmail.com</spoiler>
+ 
+ 📌 Note :- <i>If You Are From a Country Outside India Then Pay Using PayPal</i></b>"""
+	
+	KO_TEXT = """<b><u>Buy Me A Cup of Coffee</u> ☕
+ 
+ Click Below Button To Buy Coffee And Get Some Peace</b>"""
 	
 	HOME_TEXT = """
 Hello, [{}](tg://user?id={})\n\nThis is a Permanent **FileStore Bot**.
