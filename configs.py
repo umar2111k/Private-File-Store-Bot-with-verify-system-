@@ -57,7 +57,7 @@ This is a Permanent FileStore Bot By Illegal Developer
 	ABOUT_DEV_TEXT = f"""
  I am Super noob Please Support My Hard Work.
 """
-	ABOUT_DEV_TEXT = """<b>Are You A Free User? Then Upgrade Your Plan.</b>
+	UPGRADE_TEXT = """<b>Are You A Free User? Then Upgrade Your Plan.</b>
  
  Or Buy Premium Just  ₹30 or $ 0.55 And Use the Available Shortner Sites or Can Request Sites.
  
