@@ -405,8 +405,8 @@ async def button(bot: Client, cmd: CallbackQuery):
                 [
                     [
                         InlineKeyboardButton("UPI Id 🏦", callback_data="upi"),
-                        InlineKeyboardButton("PayPal 🌍", callback_data="aboutdevs"),
-                        InlineKeyboardButton("Ko-Fi ☕", callback_data="closeMessage")
+                        InlineKeyboardButton("PayPal 🌍", callback_data="paypal"),
+                        InlineKeyboardButton("Ko-Fi ☕", callback_data="ko")
                     ],
                     [
                         InlineKeyboardButton("🧑‍💻 Admin", url="https://t.me/illegaldeveloperbot")
@@ -429,8 +429,42 @@ async def button(bot: Client, cmd: CallbackQuery):
                         InlineKeyboardButton("Send Screenshot 🧾", url="https://t.me/illegaldeveloperbot")
                     ],
                     [
-                        InlineKeyboardButton("Back", callback_data="start"),
-                        InlineKeyboardButton("Next", callback_data="start")
+                        InlineKeyboardButton("« Back", callback_data="start"),
+                        InlineKeyboardButton("Next »", callback_data="paypal")
+                    ]
+                ]
+            )
+        )
+    
+    elif "paypal" in cb_data:
+        await cmd.message.edit(
+            Config.PAYPAL_TEXT,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("Send Screenshot 🧾", url="https://t.me/illegaldeveloperbot")
+                    ],
+                    [
+                        InlineKeyboardButton("« Back", callback_data="upi"),
+                        InlineKeyboardButton("Next »", callback_data="ko")
+                    ]
+                ]
+            )
+        )
+    
+    elif "ko" in cb_data:
+        await cmd.message.edit(
+            Config.KO_TEXT,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("Send Screenshot 🧾", url="https://t.me/illegaldeveloperbot")
+                    ],
+                    [
+                        InlineKeyboardButton("« Back", callback_data="paypal"),
+                        InlineKeyboardButton("Next »", callback_data="upgrade")
                     ]
                 ]
             )
