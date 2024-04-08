@@ -106,7 +106,7 @@ async def start(bot: Client, cmd: Message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("UPGRADE 💰", url="https://t.me/asianetserial_zeekeralam")
+                        InlineKeyboardButton("UPGRADE 💰", callback_data="upgrade")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -397,6 +397,25 @@ async def button(bot: Client, cmd: CallbackQuery):
             )
         )
 
+    elif "upgrade" in cb_data:
+        await cmd.message.edit(
+            Config.UPGRADE_TEXT,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("UPI Id 🏦", callback_data="aboutbot"),
+                        InlineKeyboardButton("PayPal 🌍", callback_data="aboutdevs"),
+                        InlineKeyboardButton("Ko-Fi ☕", callback_data="closeMessage")
+                    ],
+                    [
+                        InlineKeyboardButton(" 🔐 Close", callback_data="closeMessage"),
+                        InlineKeyboardButton("Home 🏡", callback_data="start")
+                    ]
+                ]
+            )
+        )
+    
     elif "gotohome" in cb_data:
         await cmd.message.edit(
             Config.HOME_TEXT.format(cmd.message.chat.first_name, cmd.message.chat.id),
@@ -404,7 +423,7 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("UPGRADE 💰", url="https://t.me/asianetserial_zeekeralam")
+                        InlineKeyboardButton("UPGRADE 💰", callback_data="upgrade")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
