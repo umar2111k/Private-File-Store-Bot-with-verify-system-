@@ -73,6 +73,14 @@ This is a Permanent FileStore Bot By Illegal Developer
 
 ‼️ ᴍᴜsᴛ sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ ᴀғᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ.</b>"""
 	
+	PAYPAL_TEXT = """<b>If You Are From a Country Outside India Then Pay Using PayPal
+ 
+ 🏦 PayPal Id - <spoiler>illegaldeveloper76@gmail.com</spoiler></b>"""
+	
+	KO_TEXT = """<b><u>Donate Something</u>
+ 
+ ☕ Buy Me A Cup of Coffee</b>"""
+	
 	HOME_TEXT = """
 Hello, [{}](tg://user?id={})\n\nThis is a Permanent **FileStore Bot**.
 
