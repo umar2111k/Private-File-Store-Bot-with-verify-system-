@@ -38,19 +38,19 @@ class Config(object):
 	ABOUT_BOT_TEXT = f"""
 <b>This is a Permanent FileStore Bot By Illegal Developer.</b>
 
-╭────[ **🔅Fɪʟᴇ Sᴛᴏʀᴇ Bᴏᴛ🔅**]────⍟
+╭────[ <b>🔅Fɪʟᴇ Sᴛᴏʀᴇ Bᴏᴛ🔅</b>────⍟
 │
-├🔸 **My Name:** [FileStore Bot](https://t.me/{BOT_USERNAME})
+├🔸 <b>My Name:</b> <a href='https://t.me/{BOT_USERNAME}'>FileStore Bot</a>
 │
-├🔸 **Language:** [Python 3](https://www.python.org)
+├🔸 <b>Language:</b> Python 3
 │
-├🔹 **Library:** [Pyrogram](https://docs.pyrogram.org)
+├🔹 <b>Library:</b> Pyrogram
 │
-├🔹 **Hosted On:** [Heroku](https://heroku.com)
+├🔹 <b>Hosted On:</b> Heroku
 │
-├🔸 **Developer:** [ILLEGAL DEVELOPER](https://t.me/illegaldeveloperbot) 
+├🔸 <b>Developer:</b> <a href="https://t.me/illegaldeveloperbot">ILLEGAL DEVELOPER</a>
 │
-├🔸 **Update Channel:** [Update Channel](https://t.me/illegal_developer)
+├🔸 <b>Update Channel:</b> <a href="https://t.me/illegal_developer">Update Channel</a>
 │
 ╰──────[ 😎 ]───────────⍟
 """
@@ -86,13 +86,13 @@ class Config(object):
  Click Below Button To Buy Coffee And Get Some Peace</b>"""
 	
 	HOME_TEXT = """
-Hello, [{}](tg://user?id={})\n\nThis is a Permanent **FileStore Bot**.
+Hello, [{}](tg://user?id={})\n\nThis is a Permanent <b>FileStore Bot</b>.
 
 <b><u>How to Use Bot & it's Benefits??</b></u>
 
 📢 Send me any File & It will be uploaded in My Database & You will Get the File Link.
 
-⚠️ Benefits: If you have a TeleGram Movie Channel or Any Copyright Channel, Then Its Useful for Daily Usage, You can Send Me Your File & I will Send Permanent Link to You & Channel will be Safe from **CopyRight Infringement** Issue. I support Channel Also You Can Check **About Bot**.
+⚠️ Benefits: If you have a TeleGram Movie Channel or Any Copyright Channel, Then Its Useful for Daily Usage, You can Send Me Your File & I will Send Permanent Link to You & Channel will be Safe from <b>CopyRight Infringement</b> Issue. I support Channel Also You Can Check <b>About Bot</b>.
 
 ❌ <b>PORNOGRAPHY CONTENTS</b> are strictly prohibited & get Permanent Ban..
 """
