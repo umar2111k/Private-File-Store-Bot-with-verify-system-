@@ -10,8 +10,10 @@
 - In Channel Add Bot as Admin With Edit Rights. When You Will Send Any File or Media in Channel It Will Edit The Broadcast Message With Saved Link Button.
 - You Can Also Broadcast Anythings Via This Bot.
 - You Can Also Do Force Sub to a Channel To Allow Access The Bot.
+- File Auto Delete Features Added
 - You Can Set Shortner or Verification For 12 Hours
 - Your User Will Be Get Enjoy With Fast Download And Stream Feature
+- You Can Enable Or Disable File Forwarding 
 
 ### Demo Bot:
 <a href="https://t.me/TG_File_Store_iBot"><img src="https://img.shields.io/badge/Demo-Telegram%20Bot-blue.svg?logo=telegram"></a>
