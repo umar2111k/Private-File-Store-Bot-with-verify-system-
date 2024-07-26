@@ -15,7 +15,7 @@ class Config(object):
 	ID = {}
 	API_ID = int(os.environ.get("API_ID", "23475322"))
 	API_HASH = os.environ.get("API_HASH", "e00e5cebf073df8baba7db34ea0ebdc9")
-	BOT_TOKEN = os.environ.get("BOT_TOKEN", "7189658044:AAEpOpjjkCa-yPGqJkeZLGqcTuGyf8FZksU")
+	BOT_TOKEN = os.environ.get("BOT_TOKEN", "7189658044:AAFgOV2s8SWRAH59l9aDARyA7mteM24qWxM")
 	BOT_USERNAME = os.environ.get("BOT_USERNAME", "Legal_testing_of_bot")
 	DB_CHANNEL = int(os.environ.get("DB_CHANNEL", "-1002201418160"))
 	SHORTLINK_URL = os.environ.get('SHORTLINK_URL', "earn4link.in")
