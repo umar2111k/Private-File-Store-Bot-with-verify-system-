@@ -1,8 +1,6 @@
-# (c) @Illegal_Developer
 
-import asyncio
-from typing import (
-    Union
+
+
 )
 from configs import Config
 from pyrogram import Client
