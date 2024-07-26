@@ -1,0 +1,10 @@
+Pyrogram==2.0.106
+TgCrypto
+motor
+aiofiles
+dnspython
+psutil
+render
+requests
+pytz 
+shortzy 
