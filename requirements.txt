@@ -1,0 +1,11 @@
+pyrofork
+TgCrypto
+motor
+aiofiles
+dnspython
+pyromod
+psutil
+render
+requests
+pytz 
+shortzy 
